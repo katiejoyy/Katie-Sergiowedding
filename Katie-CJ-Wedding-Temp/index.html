@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="theme">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="ClearJoy Development Ltd." />
+        <meta name="description" content="Katie & Sergio wedding website" />
+        <title>Katie & Sergio Wedding</title>
+        <!-- Need to include google analytics and search engine links here if we want them -->
+    
+        <link rel="stylesheet" href="./dist/css/style.min.css">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+       
+    
+        
+    </head>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">K & S</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#welcome" onclick="toggleMenu();">Welcome</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Attendance</a></li>
+            <li><a href="#faq" onclick="toggleMenu();">FAQs</a></li>
+
+        </ul>
+
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h1>Katie & Sergio</h1>
+            <p>Saturday 6th August 2022</p>
+        </div>
+    </section>
+
+    <section class="welcome" id="welcome">
+        <h2>Welcome</h2>
+        <div class="welcome-content">
+            <div class="col">
+                <p>Sergio and Katie invite you to an evening of food, drinks and dancing to celebrate their wedding!
+                    <p>Please join us on Saturday the 6th of August 2022 at 5:30pm at the London Canal Museum. <br>12/13 New Wharf Rd, London N1 9RT</p>
+                </p>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.8540035136!2d-0.12224478430597285!3d51.53423757963954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3fb1bb9ce9%3A0x49bcefe44647ede0!2sLondon%20Canal%20Museum!5e0!3m2!1sen!2suk!4v1646647756422!5m2!1sen!2suk"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+
+            </div>
+            <div class="col">
+                <div class="imgwel">
+                    <img src="./dist/images/paultutacphotographer-8s63ULrK5ds-unsplash.jpg" alt="Photo by <a href="https://unsplash.com/@paultutacphotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">paultutacphotographer</a> on <a href="https://unsplash.com/photos/8s63ULrK5ds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    ">
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Confirm Attendance</h2>
+        <div class="contact-para">
+
+            <div class="col">
+                <p>Please fill out the RSVP form with your first name, last name, if you can attend or not and what your dietary requirements are. <br>
+                    <p>If you are filling out the form for you and your party please select "Add guest" to add the other person's information. This includes any children.<br>
+                        <p>The cut off for sending in your RSVP is the 6th of July 2022. If you have any other questions please add it to the form and we will get back to you.</p>
+            </div>
+
+        </div>
+
+        <!--Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Priscilla Du Preez</a> on <a href="https://unsplash.com/backgrounds/colors/black?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  -->
+
+
+        <div class="contact-form-container">
+            <div class="contact-form">
+
+                <form id="form-main" method="POST" enctype="multipart/form-data" action="https://formspree.io/f/xjvlyqba" method="POST">
+                    <div class="form-block">
+                        <div class="form-container">
+                            <div class="form-group" id="form-group">
+                                <p>Name:</p>
+                                <input type="text" id="fname_1" name="fname_1" class="form-control" placeholder="First Name" required>
+                                <input type="text" id="lname_1" name="lname_1" placeholder="Last Name">
+                                <hr>
+                                <!--I have removed value from these inputs, lets see if its okay-->
+
+
+                                <p>Can you attend our wedding?</p>
+                                <input type="radio" id="acceptance_1" name="acceptance_1" value="accept" required>
+
+
+                                <label for="yesaccept">Yes I can attend</label>
+                                <br>
+
+                                <input type="radio" id="acceptance_1" name="acceptance_1" value="noaccept" required>
+                                <label for="noaccept">No I cannot attend</label>
+                                <hr>
+
+
+                                <p>Please select your dietary preference:</p>
+                                <input type="radio" id="menu_1" name="menu_1" value="Meat">
+
+
+                                <label for="Meat">Meat/Fish</label>
+                                <label><input type="radio" id="menu_1" name="menu_1" value="Vegan/Vegetarian">
+                                    <label for="Vegan/Vegetarian">Vegan</label></label>
+
+
+
+                            </div>
+
+
+                        </div>
+                        <a href="#" class="btn btn-primary add-more-btn">Add Guest</a><br>
+                        <!--<a href="#" class="btn btn-primary delete-more-btn">Delete Guest</a> -->
+                        <hr>
+
+
+                        <p>Any dietary requirements/allergies?</p>
+                        <textarea name="message" rows="3" cols="40"></textarea><br><br>
+
+                        <p>Any questions or additonal information we should know?</p>
+
+                        <textarea name="message" rows="10" cols="50"></textarea><br><br>
+
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+
+                    </div>
+
+
+                </form>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <section class="faq" id="faq">
+        <h2>FAQs</h2>
+
+        <p class="text">What is the dress code? <br><span class="moreText">The dress code for our wedding is smart casual attire. Shirts, polo shirts or cocktail dresses.</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">What should I do if I can't make it?<br><span class="moreText">You will be missed! If you can not make it to the wedding, please let us know as soon as possible and RSVP " No I can not attend" so we can plan accordingly</span><button class="read-more-btn">Read More</button></p>
+
+
+        <p class="text">What will the weather be like this time of year?<br><span class="moreText">Hopefully very warm and sunny! But please consider an umbrella (this is still England).</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">Will the reception be indoors? <br><span class="moreText">Yes, with a terrace area open until 10pm</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">What time should I arrive? <br><span class="moreText">Please arrive at the venue for 5:30PM</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">How do I get to the venue?<br><span class="moreText">The address is: 12/13 New Wharf Rd, London N1 9RT.<br>
+            The nearest station is King's Cross and is a 10 minute walk from there.<br> For more information please follow the link to the venue's website for more information: <a href="https://www.canalmuseum.org.uk/visit/find-us.htm"></a></span>
+            <button class="read-more-btn">Read More</button>
+        </p>
+        <p class="text">Are kids welcome? <br><span class="moreText">Yes kids are welcome! Make sure to include them in the RSVP form.</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">Can I bring a date? <br><span class="moreText">We have a strict guest list to stay on budget.  Our wedding is strictly RSVP only. We will only able to accommodate those listed on your invitation.</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">Will food be served? <br><span class="moreText">We will have a buffet style meal and finger food served at the venue.</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">Will there be an open bar? <br><span class="moreText">Yes, there will be an open bar</span><button class="read-more-btn">Read More</button></p>
+
+
+        <p class="text">Will there be any vegan / vegetarian or special diet options?<br><span class="moreText">We will be providing vegan options and if you have any special dietary requiements please let us know when you fill out RSVP</span><button class="read-more-btn">Read More</button></p>
+
+        <p class="text">Can I take and post pictures of the wedding on social media?<br><span class="moreText">Yes you are welcome to take pictures and post them on soical media. However we will have a professional photgrapher at the venue all day. </span>
+            <button class="read-more-btn">Read More</button>
+        </p>
+
+
+
+        <p class="text">Where should guests park? <br><span class="moreText">The museum does not have a car park. The nearest car park is the car park of St. Pancras International Station. This is a central London location so parking is very limited. We advise using public transport or taxis.</span>
+            <button class="read-more-btn">Read More</button>
+        </p>
+
+        <p class="text">When is the RSVP deadline? <br><span class="moreText">Please fill out the form above for each individual invitee before 6th July 2022.</span><button class="read-more-btn">Read More</button></p>
+        <p class="text">Is the venue wheelchair accessible? <br><span class="moreText">Yes. London Canal Museum is one of the most easily accessible in England for disabled visitors. All parts of the museum are accessible to people with a disability and there is plenty of interest to enjoy.</span>
+            <button class="read-more-btn">Read More</button>
+        </p>
+
+        <p class="text">Where are you registered? <br><span class="moreText">  We're not accepting gifts, but if you're feeling generous we have a honey moon fund instead! This can be in the form of cash on the day or a bank transfer if you prefer (just message one of us for details!) Thank you in advance!</span>
+            <button class="read-more-btn">Read More</button>
+        </p>
+
+
+
+
+
+    </section>
+    <script src="/dist/scripts/app.js"></script>
+    <script>
+        $.fn.id_changer = function(new_id) {
+            return this.each(function() {
+                $(this).find('input').each(function() {
+                    var ob = $(this);
+                    ob.attr('id', this.id.replace(/_\d$/, '_' + new_id));
+                    ob.attr('name', this.name.replace(/_\d$/, '_' + new_id));
+                });
+            });
+
+
+        };
+        var guest = 2;
+        $('.add-more-btn').click(function() {
+            var clone = $('#form-group').clone();
+            clone = clone.id_changer(guest++);
+            $('.form-container').append(clone);
+            console.log('click function');
+        });
+        $('.delete-more-btn').click(function() {
+            var formgroups = $('.form-group');
+            if (formgroups.length == 1) {
+                return;
+
+
+            }
+            var lastformgroup = $('.form-group').last();
+            lastformgroup.remove();
+            console.log($('.form-group'));
+
+
+        });
+    </script>
+    
+</body>
+</html>

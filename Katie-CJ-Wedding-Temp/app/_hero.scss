@@ -1,0 +1,27 @@
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), #0c0c0c), url(../images/amanda-mocci-Zyp3t67rrP4-unsplash_low.jpg) fixed 50%;
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h1 {
+    font-size: $font-title;
+    margin: 250px 0 0 0;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: $font-title-small;
+    margin-top: 50px;
+    color: #fff;
+}
